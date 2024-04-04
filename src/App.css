@@ -1,0 +1,282 @@
+#root
+{
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+h1
+{
+  font-size: 2.5rem;
+  text-wrap: wrap;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+
+h3
+{
+  font-size: 1.5rem;
+  text-wrap: wrap;
+  font-weight: 400;
+  max-width: 480px;
+  padding: 0;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+
+}
+
+.container
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.title-section
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 15rem 15rem;
+  background-color: #FFCF47;
+  padding: 1rem;
+  margin: 0;
+  padding-top: 0;
+}
+
+.buttons-section
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.buttons-section button
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #111;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  border: 3px solid #111;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.buttons-section button img
+{
+  width: 25px;
+  height: auto;
+  margin-right: 10px;
+
+}
+
+.currencies-section
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  width: 100%;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.currency-card p
+{
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.images-section
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  align-items: stretch;
+}
+
+.images-section img
+{
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 0.75rem #111);
+}
+
+.title-section img
+{
+  width: 50px;
+  height: auto;
+  margin-top: 1.5rem;
+}
+
+.links-section
+{
+  background-color: #fff;
+  color: #111;
+  padding: 0.7rem;
+  border: 3px solid #111;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.links-section a
+{
+  text-decoration: none;
+  color: #111;
+  font-weight: bold;
+  text-align: center;
+}
+
+.title-and-currencies
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+
+@media screen and (max-width: 480px)
+{
+  .title-section h1
+  {
+    text-align: center;
+  }
+
+  .title-section h3
+  {
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .title-section
+  {
+    justify-content: center;
+  }
+
+  .currencies-section
+  {
+    padding: 2rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 820px)
+{
+  .title-section h1
+  {
+    text-align: center;
+  }
+
+  .title-section h3
+  {
+    max-width: 350px;
+    text-align: center;
+  }
+
+  .title-section
+  {
+    justify-content: center;
+  }
+
+  .images-section img
+  {
+    max-width: 480px;
+  }
+
+  .currencies-section
+  {
+    padding: 2rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 821px) and (max-width: 1024px)
+{
+  .title-section
+  {
+    justify-content: flex-start;
+    border-radius: 0 0 15rem 0;
+    max-width: 480px;
+  }
+
+  .title-and-currencies
+  {
+    min-height: 480px;
+    justify-content: space-between;
+  }
+
+  .images-section
+  {
+    height: 464px;
+    justify-content: space-between;
+  }
+
+  .images-section img
+  {
+    max-width: 380px;
+
+  }
+
+  .container
+  {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .title-section img
+  {
+    display: flex;
+    align-self: flex-start;
+  }
+
+}
+
+@media only screen and (min-width: 1025px)
+{
+  .title-section
+  {
+    justify-content: flex-start;
+    border-radius: 0 0 15rem 0;
+    max-width: 480px;
+  }
+
+  .images-section
+  {
+    max-width: 480px;
+  }
+
+  .container
+  {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .title-section img
+  {
+    display: flex;
+    align-self: flex-start;
+  }
+
+  .title-and-currencies
+  {
+    min-height: 495px;
+    justify-content: space-between;
+  }
+}
