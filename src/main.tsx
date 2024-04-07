@@ -1,10 +1,21 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.tsx";
+import "./index.css";
+import Quote from "./Quote.tsx";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+const rootElement = document.getElementById("root");
+if (rootElement) {
+	ReactDOM.createRoot(rootElement).render(
+		<React.StrictMode>
+			
+			<Router>
+				<Routes>
+          <Route path="/" element={<App />} />
+					<Route path="/quote" element={<Quote />} />
+				</Routes>
+			</Router>
+		</React.StrictMode>,
+	);
+}

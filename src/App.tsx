@@ -1,6 +1,7 @@
 import "./App.css";
 import moneyModel from "./assets/money-model.webp";
-import moneyIcon from "./assets/Dollar money logo-sf.png";
+import moneyIcon from "./assets/dollar-money-logo.png";
+import { Link } from "react-router-dom";
 
 function App() {
 	return (
@@ -27,20 +28,24 @@ function App() {
 						</div>
 					</div>
 					<div className="buttons-section">
-						<button type="button">
+						<a
+							href="https://wa.me/555481156815"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							<img
 								src="https://www.svgrepo.com/show/475692/whatsapp-color.svg"
 								alt="whatsapp icon"
 							/>
 							WhatsApp
-						</button>
-						<button type="button">
+						</a>
+						<Link to="/quote">
 							<img
 								src="https://www.svgrepo.com/show/521097/calculator.svg"
 								alt="calculator icon"
 							/>{" "}
 							Get a quote
-						</button>
+						</Link>
 					</div>
 				</div>
 				<div className="images-section">

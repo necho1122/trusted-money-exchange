@@ -57,7 +57,8 @@ h3
   padding: 0;
 }
 
-.buttons-section button
+.buttons-section button,
+.buttons-section a
 {
   display: flex;
   flex-direction: row;
@@ -75,7 +76,13 @@ h3
   font-size: 16px;
 }
 
-.buttons-section button img
+.buttons-section a
+{
+  text-decoration: none;
+}
+
+.buttons-section button img,
+.buttons-section a img
 {
   width: 25px;
   height: auto;
@@ -178,6 +185,11 @@ h3
 
 @media only screen and (min-width: 481px) and (max-width: 820px)
 {
+  h1
+  {
+    padding: 0 1rem;
+  }
+
   .title-section h1
   {
     text-align: center;
