@@ -3,24 +3,108 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
     height: 100vh;
-    width: 100%;
-
 }
 
 .quote
 {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.quote-title
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quote-form
+{
     display: flex;
+    flex-direction: column;
+}
+
+.input-group
+{
+    margin-bottom: 10px;
+}
+
+label
+{
+    font-weight: bold;
+}
+
+select,
+.input-group input
+{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.amount-input
+{
+    width: calc(100% - 80px);
+}
+
+.result-input
+{
+    cursor: not-allowed;
+}
+
+.quote-button
+{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.quote-button:hover
+{
+    background-color: #0056b3;
+}
+
+.buttons-section a
+{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    font-size: 1.5em;
-    font-style: italic;
-    color: #666;
-    margin: 0 auto;
-    padding: 0.5em;
-    border-left: 0.25em solid #666;
-    background-color: #f9f9f9;
-    border-radius: 0.5em;
-    box-shadow: 0 0 0.5em #666;
     align-items: center;
+    background-color: #fff;
+    color: #111;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    border: 3px solid #111;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#back-to-home
+{
+    text-decoration: none;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#back-to-home img
+{
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
 }

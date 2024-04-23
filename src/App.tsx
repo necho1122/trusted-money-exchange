@@ -1,57 +1,74 @@
-import "./App.css";
-import moneyModel from "./assets/money-model.webp";
-import moneyIcon from "./assets/dollar-money-logo.png";
-import { Link } from "react-router-dom";
+import './App.css';
+import moneyModel from './assets/money-model.webp';
+import moneyIcon from './assets/dollar-money-logo.png';
+import { Link } from 'react-router-dom';
 
 function App() {
 	return (
 		<>
-			<div className="container">
-				<div className="title-and-currencies">
-					<div className="title-section">
-						<img src={moneyIcon} alt="money icon" />
+			<div className='container'>
+				<div className='title-and-currencies'>
+					<div className='title-section'>
+						<img
+							src={moneyIcon}
+							alt='money icon'
+						/>
 						<h1>The Trusted Money Exchange</h1>
 						<h3>Fast, Secure, and Reliable Currency Exchange</h3>
 					</div>
-					<div className="currencies-section">
-						<div className="currency-card">
+					<div className='currencies-section'>
+						<div className='currency-card'>
 							<p>✔ United States Dollar (USD)</p>
 						</div>
-						<div className="currency-card">
+						<div className='currency-card'>
 							<p>✔ Euro (EUR)</p>
 						</div>
-						<div className="currency-card">
+						<div className='currency-card'>
 							<p>✔ Reais (BRL)</p>
 						</div>
-						<div className="currency-card">
+						<div className='currency-card'>
 							<p>✔ Bolivares (VES)</p>
 						</div>
+						<div className='currency-card'>
+							<p>✔ Colombian Pesos (COP)</p>
+						</div>
+						<div className='currency-card'>
+							<p>✔ Chilean Peso (CLP)</p>
+						</div>
 					</div>
-					<div className="buttons-section">
+					<div className='buttons-section'>
 						<a
-							href="https://wa.me/555481156815"
-							target="_blank"
-							rel="noopener noreferrer"
+							href='https://wa.me/555481156815'
+							target='_blank'
+							rel='noopener noreferrer'
 						>
 							<img
-								src="https://www.svgrepo.com/show/475692/whatsapp-color.svg"
-								alt="whatsapp icon"
+								src='https://www.svgrepo.com/show/475692/whatsapp-color.svg'
+								alt='whatsapp icon'
 							/>
 							WhatsApp
 						</a>
-						<Link to="/quote">
+						<Link to='/quote'>
 							<img
-								src="https://www.svgrepo.com/show/521097/calculator.svg"
-								alt="calculator icon"
-							/>{" "}
+								src='https://www.svgrepo.com/show/521097/calculator.svg'
+								alt='calculator icon'
+							/>{' '}
 							Get a quote
 						</Link>
 					</div>
 				</div>
-				<div className="images-section">
-					<img src={moneyModel} alt="money model" />
-					<div className="links-section">
-						<a href="/">web page https://www.example.com</a>
+				<div className='images-section'>
+					<img
+						src={moneyModel}
+						alt='money model'
+					/>
+					<div className='links-section'>
+						<a
+							href='https://portfolio-mu-six-12.vercel.app/'
+							target='_blank'
+						>
+							Like this website? Click here to get yours.
+						</a>
 					</div>
 				</div>
 			</div>
