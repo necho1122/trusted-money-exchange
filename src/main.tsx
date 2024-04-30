@@ -12,7 +12,7 @@ if (rootElement) {
 			
 			<Router>
 				<Routes>
-          <Route path="/" element={<App />} />
+          			<Route path="/" element={<App />} />
 					<Route path="/quote" element={<Quote />} />
 				</Routes>
 			</Router>

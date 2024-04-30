@@ -77,12 +77,3 @@ function App() {
 }
 
 export default App;
-
-import express from 'express';
-
-const app = express();
-
-const port = process.env.PORT || 3000; // Usa el puerto proporcionado por Render o 3000 si no está definido
-app.listen(port, () => {
-	console.log(`Servidor React escuchando en el puerto ${port}`);
-});
