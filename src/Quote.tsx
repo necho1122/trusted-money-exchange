@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './Quote.css';
 import axios from 'axios';
 
@@ -17,7 +17,7 @@ function Quote() {
 		const fetchData = async () => {
 			try {
 				const response = await axios.get<RateData[]>(
-					'http://localhost:3000/data'
+					'https://money-exchange-api.onrender.com/data'
 				);
 				const rateData = response.data[0];
 				setRates(rateData);
@@ -33,8 +33,8 @@ function Quote() {
 		event.preventDefault();
 		const fromRate = rates[fromCurrency];
 		const toRate = rates[toCurrency];
-		const convertedAmount = ((amount as number) / fromRate) * toRate;
-		setResult(Number(convertedAmount.toFixed(4)));
+		const convertedAmount = ((amount as number) / fromRate) * toRate * 0.95;
+		setResult(Number(convertedAmount.toFixed(2)));
 	};
 
 	return (
