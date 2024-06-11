@@ -1,5 +1,0 @@
-services:
-  - name: server
-    env:
-      - name: PORT
-        value: 3000
