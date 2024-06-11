@@ -17,7 +17,7 @@ function Quote() {
 		const fetchData = async () => {
 			try {
 				const response = await axios.get<RateData[]>(
-					'https://money-exchange-api.onrender.com/data'
+					'https://money-exchange-api.vercel.app/data'
 				);
 				const rateData = response.data[0];
 				setRates(rateData);
